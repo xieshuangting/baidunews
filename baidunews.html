@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta charset="UTF-8">
+	<title>百度新闻</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/baidu.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</header>
+	<nav>
+		<ul>
+		<li><a href="#">推荐</a></li>
+			<li><a href="#">百家</a></li>
+			<li><a href="#">本地</a></li>
+			<li><a href="#">娱乐</a></li>
+			<li><a href="#">军事</a></li>
+			<li><a href="#">社会</a></li>
+			<li><a href="#">女人</a></li>
+			<li><a href="#">搞笑</a></li>
+			<li><a href="#">互联网</a></li>
+			<li><a href="#">科技</a></li>
+			<li><a href="#">生活</a></li>
+		</ul>
+	</nav>
+
+	<article class="news-main">
+		<ul class="news-lists">
+		<!-- 动态添加 -->
+			<!-- <li class="news-list">
+				<div class="newsimg">
+					<img src="img/1.jpg">
+				</div>
+				<div class="newscontent">
+					<h1>新浪微博三季度净利润破1亿美元，明起看部分大V图片要付费</h1>
+					<p><span class="newstime">2017年11月8日</span><span class="newssrc">百度财经</span></p>
+				</div>
+			</li> -->
+		</ul>
+	</article> 
+
+	<script>
+		$(function(){
+			var diveceWidth = $('body').width();
+			$("ul li").each(function(){
+				var str = $(this).find('a').html();
+				var strlen = str.length;
+				if(strlen>2){
+					$(this).width(diveceWidth/3);
+				}else{
+					$(this).width(diveceWidth/6);
+				}
+			});
+		});
+	</script>
+	<script src="js/news.js"></script>
+</body>
+</html>

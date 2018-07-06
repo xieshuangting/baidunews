@@ -1,0 +1,102 @@
+html{
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+	font-family:arial; 
+}
+body{
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header{
+	width: 100%;
+	height: 4.8rem;
+	background: #3e98f0 url(../img/plus_logo.png) no-repeat center center;
+	background-size: 6rem;
+	border-bottom: 1px solid #5dabf0;
+}
+header a{
+	height: 4.8rem;
+	display: block;
+	width: 3.4rem;
+}
+header a:nth-child(1){
+	background: url(../img/icon.png) .1rem .6rem;
+	background-size: 4rem;
+	float: left;
+}
+header a:nth-child(2){
+	background: url(../img/icon.png) .1rem 4rem;
+	background-size: 4rem;
+	float: left;
+}
+header a:nth-child(4){
+	background: url(../img/icon.png) .1rem -15.9rem;
+	background-size: 4rem;
+	float: right;
+}
+header a:nth-child(3){
+	background: url(../img/icon.png) .1rem -10.3rem;
+	background-size: 4rem;
+	float: right;
+	padding-right: 1rem;
+}
+
+nav{
+	background: #3e98f0;
+}
+nav ul{
+	font-size: 0;
+}
+nav ul li{
+	display: inline-block;
+	font-size: 1.6rem;
+	text-align: center;
+	/*width: 16.66%;*/
+}
+nav ul li a{
+	display: inline-block;
+	color: #c2daf8;
+	padding: 1rem 0;	
+}
+
+
+.news-lists{
+	margin: 1rem 0 0;
+	padding: 0 1.3rem;
+}
+.news-list{
+	display: flex;
+	border-bottom: 1px solid #E6E6E6;
+}
+.news-lists h1{
+	font-size: 1.3rem;
+}
+.newsimg{
+	flex: 1;
+}
+.newscontent{
+	flex:2;
+	padding-left: 0.8rem;
+}
+.newsimg img{
+	width: 100%;
+	height: auto;
+}
+.newscontent span{
+	display: inline-block;
+}
+.newscontent .newssrc{
+	margin-left: .8rem;
+	border: 1px solid #f00;
+	border-radius: 3px;
+	color: #f00;
+}
